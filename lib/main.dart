@@ -54,6 +54,7 @@ class _RefreshOnPullPageState extends State<RefreshOnPullPage> {
           key: refreshKey,
           onRefresh: refreshList,
           child: ListView.builder(
+            itemCount: _list.length,
               itemBuilder: (context, index) =>
                   ListTile(title: Text(_list[index]))),
         ));
